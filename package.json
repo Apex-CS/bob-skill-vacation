@@ -1,7 +1,7 @@
 {
   "name": "my-examples",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vacation checker",
   "main": "src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
