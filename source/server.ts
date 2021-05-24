@@ -3,6 +3,7 @@ import express, { Application, Request, Response, NextFunction } from 'express';
 import logging from './config/logging';
 import config from './config/config';
 import healthCheck from './routes/healthCheck';
+import message from './routes/message';
 
 const NAMESPACE = 'Server';
 const router: Application = express();
@@ -34,6 +35,7 @@ router.use((req: Request, res: Response, next: NextFunction) => {
 
 /** Routes */
 router.use('/healthCheck', healthCheck);
+router.use('/message', message);
 
 /** Error handling */
 router.use((req: Request, res: Response, _next: NextFunction) => {
